@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>انتشارات نجوای قلم</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+      :root {
+          --primary-color: #1d1d1d;
+          --secondary-color: #f4f4f4;
+          --accent-color: #FFD700;
+          --highlight-color: #FF4500;
+          --text-color: #FFFFFF;
+          --background-color: #ffffff;
+      }
+
+      body {
+          font-family: 'Vazir', sans-serif;
+          background-color: var(--background-color);
+          color: var(--primary-color);
+          line-height: 1.6;
+          text-align: center;
+          margin: 0;
+      }
+
+      header {
+          background: var(--primary-color);
+          color: var(--text-color);
+          padding: 60px;
+          border-radius: 15px;
+          margin-bottom: 20px;
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+          animation: fadeIn 1s ease;
+      }
+
+      header img {
+          max-width: 200px;
+          margin-bottom: 20px;
+          animation: bounce 2s infinite;
+      }
+
+      h1 {
+          margin-bottom: 0.5em;
+          font-weight: 700;
+          font-size: 3em;
+          animation: slideInDown 1s ease;
+      }
+
+      h2 {
+          margin-bottom: 0.5em;
+          font-weight: 400;
+          font-size: 1.8em;
+          color: var(--accent-color);
+          animation: fadeIn 1.5s ease;
+      }
+
+      .navbar {
+          background-color: var(--highlight-color);
+          animation: fadeIn 1.5s ease;
+      }
+
+      .navbar a {
+          color: var(--text-color);
+          font-weight: bold;
+          transition: transform 0.3s;
+      }
+
+      .navbar a:hover {
+          transform: scale(1.1);
+      }
+
+      .hero {
+          background: url('https://source.unsplash.com/1600x900/?books') no-repeat center center / cover;
+          height: 70vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: var(--text-color);
+          text-align: center;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+          position: relative;
+          animation: fadeIn 2s ease;
+      }
+
+      .hero::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+      }
+
+      .content {
+          padding: 20px;
+          max-width: 1200px;
+          margin: 20px auto;
+          background-color: var(--secondary-color);
+          border-radius: 15px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          text-align: right;
+          animation: fadeInUp 1s ease;
+      }
+
+      .footer {
+          background: var(--primary-color);
+          color: var(--text-color);
+          text-align: center;
+          padding: 20px 0;
+          margin-top: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+          animation: fadeIn 2s ease;
+      }
+
+      .service-section, .testimonial-section, .portfolio-section, .blog-section, .newsletter-section {
+          padding: 40px;
+          margin: 20px auto;
+          border-radius: 15px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          animation: fadeInUp 1s ease;
+      }
+
+      .testimonial-section {
+          background-color: var(--primary-color);
+          color: var(--text-color);
+      }
+
+      .social-icons a {
+          color: var(--accent-color);
+          margin: 0 10px;
+          font-size: 1.5em;
+          transition: transform 0.3s, color 0.3s;
+      }
+
+      .social-icons a:hover {
+          transform: scale(1.2);
+          color: var(--highlight-color);
+      }
+
+      .btn-custom {
+          background-color: var(--accent-color);
+          color: var(--text-color);
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 1em;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.3s;
+          margin: 10px 0;
+      }
+
+      .btn-custom:hover {
+          background-color: var(--highlight-color);
+          transform: scale(1.05);
+      }
+
+      @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+      }
+
+      @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes slideInDown {
+          from { opacity: 0; transform: translateY(-20px); }
+          to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+          40% { transform: translateY(-30px); }
+          60% { transform: translateY(-15px); }
+      }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="1731497589.png" alt="لوگوی انتشارات نجوای قلم">
+  <h1>انتشارات نجوای قلم</h1>
+  <h2>چاپ کتاب از مجوز تا پخش</h2>
+</header>
+
+<nav class="navbar">
+  <div class="nav-wrapper">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#home">صفحه اصلی</a></li>
+          <li><a href="#contact">تماس با ما</a></li>
+          <li><a href="#submission">ارسال و بررسی آثار</a></li>
+          <li><a href="#launch">رونمایی از کتاب</a></li>
+          <li><a href="#testimonials">نظرات مشتریان</a></li>
+          <li><a href="#portfolio">نمونه کارها</a></li>
+          <li><a href="#blog">وبلاگ</a></li>
+          <li><a href="#newsletter">خبرنامه</a></li>
+      </ul>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>خدمات چاپ و نشر کتاب</h1>
+  <p>به صورت کاملاً حرفه‌ای و با مجوز رسمی</p>
+  <button class="btn-custom" onclick="showInfo('services')">بیشتر بدانید</button>
+</div>
+
+<div class="content">
+  <div id="home" class="service-section">
+      <h3>صفحه اصلی</h3>
+      <p>به انتشارات نجوای قلم خوش آمدید. ما بهترین خدمات چاپ و نشر را با کیفیت بالا ارائه می‌دهیم. هدف ما ارتقاء فرهنگ کتابخوانی و حمایت از نویسندگان جوان است. با ما همراه شوید و دنیای چاپ و نشر را تجربه کنید.</p>
+      <button class="btn-custom" onclick="showInfo('about')">بیشتر بدانید</button>
+  </div>
+
+  <div id="contact" class="service-section">
+      <h3>تماس با ما</h3>
+      <p>برای ارتباط با ما می‌توانید از طریق تلفن یا ایمیل با ما تماس بگیرید. ما همیشه آماده پاسخگویی به سوالات شما هستیم. هر سوالی دارید، با ما در میان بگذارید و از مشاوره رایگان ما بهره‌مند شوید.</p>
+      <address>آدرس: تهران، بلوار مرزداران، خیابان خرم‌رودی، برج الوند- واحد 25</address>
+      <p>تلفن دفتر: 021-44246511 همراه: 09128099831</p>
+      <button class="btn-custom" onclick="showInfo('contact')">ارسال پیام</button>
+  </div>
+
+  <div id="submission" class="service-section">
+      <h3>ارسال و بررسی آثار</h3>
+      <p>شما می‌توانید آثار خود را برای بررسی به ما ارسال کنید. ما در سریع‌ترین زمان ممکن به شما پاسخ خواهیم داد و در صورت نیاز، نکات مفیدی برای بهبود اثر شما ارائه خواهیم کرد. با ارسال اثر خود، به جمع نویسندگانی بپیوندید که به موفقیت دست یافته‌اند.</p>
+      <button class="btn-custom" onclick="showInfo('submission')">ارسال اثر</button>
+  </div>
+
+  <div id="launch" class="service-section">
+      <h3>رونمایی از کتاب</h3>
+      <p>ما به شما کمک می‌کنیم تا کتاب‌های خود را رونمایی کنید و به مخاطبان خود معرفی نمایید. با برگزاری مراسم رونمایی، شما می‌توانید به بهترین شکل ممکن اثر خود را به نمایش بگذارید. این فرصت را از دست ندهید و با ما در این سفر هیجان‌انگیز همراه شوید.</p>
+      <button class="btn-custom" onclick="showInfo('launch')">جزئیات بیشتر</button>
+  </div>
+
+  <div id="testimonials" class="testimonial-section">
+      <h3>نظرات مشتریان</h3>
+      <div class="testimonial">«انتشارات نجوای قلم بهترین خدمات را ارائه می‌دهد. کتاب من با کیفیت عالی چاپ شد!» - مریم حسینی</div>
+      <div class="testimonial">«تجربه فوق‌العاده‌ای داشتم. تیم بسیار حرفه‌ای و کارآمدی دارند.» - علی اکبری</div>
+      <div class="testimonial">«از خدمات نشر و چاپ این انتشارات بسیار راضی هستم. حتماً توصیه می‌کنم!» - سارا محمدی</div>
+      <button class="btn-custom" onclick="showInfo('testimonials')">بیشتر بخوانید</button>
+  </div>
+
+  <div id="portfolio" class="portfolio-section">
+      <h3>نمونه کارها</h3>
+      <div class="portfolio-item">کتاب «داستان‌های کوتاه» - نویسنده: سمیرا نیک‌فر</div>
+      <div class="portfolio-item">کتاب «گزارش سفر» - نویسنده: امیر حسین‌زاده</div>
+      <div class="portfolio-item">کتاب «شعرهای عاشقانه» - نویسنده: نازنین رضایی</div>
+      <button class="btn-custom" onclick="showInfo('portfolio')">مشاهده همه نمونه‌ها</button>
+  </div>
+
+  <div id="blog" class="blog-section">
+      <h3>وبلاگ</h3>
+      <p>در اینجا می‌توانید آخرین اخبار و مقالات مرتبط با نشر و چاپ کتاب را مشاهده کنید. ما به شما نکات و راهنمایی‌های مفیدی ارائه می‌دهیم. با خواندن مقالات ما، می‌توانید دانش خود را در زمینه نشر و چاپ کتاب افزایش دهید و از تجربیات ما بهره‌مند شوید.</p>
+      <div class="blog-post">
+          <h4>چگونه کتاب خود را منتشر کنیم؟</h4>
+          <p>در این مقاله به مراحل مختلف انتشار کتاب و نکات مهم آن پرداخته‌ایم. از نوشتن و ویرایش گرفته تا طراحی جلد و توزیع، ما همه چیز را برای شما توضیح داده‌ایم.</p>
+      </div>
+      <div class="blog-post">
+          <h4>نکات مهم در طراحی جلد کتاب</h4>
+          <p>جلد کتاب یکی از مهم‌ترین عوامل جذب خواننده است. در این مقاله به نکات طراحی جلد می‌پردازیم و به شما کمک می‌کنیم بهترین انتخاب را داشته باشید. طراحی جلد می‌تواند تأثیر زیادی بر روی فروش کتاب شما داشته باشد.</p>
+      </div>
+      <button class="btn-custom" onclick="showInfo('blog')">بیشتر بخوانید</button>
+  </div>
+
+  <div id="newsletter" class="newsletter-section">
+      <h3>خبرنامه</h3>
+      <p>برای دریافت آخرین اخبار و پیشنهادات ما، ایمیل خود را وارد کنید:</p>
+      <form>
+          <input type="email" placeholder="ایمیل خود را وارد کنید" required>
+          <button type="submit" class="btn-custom">ثبت نام</button>
+      </form>
+  </div>
+
+  <div class="social-icons">
+      <a href="https://www.instagram.com/najvayeghalam/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2024 انتشارات نجوای قلم. تمامی حقوق محفوظ است.</p>
+</div>
+
+<script>
+  function showInfo(section) {
+      let message = "";
+      switch (section) {
+          case 'services':
+              message = "ما خدمات چاپ و نشر حرفه‌ای شامل طراحی جلد، ویرایش، توزیع و مشاوره برای نویسندگان را ارائه می‌دهیم. هدف ما این است که هر نویسنده‌ای با خیال راحت و با کیفیت بالا کتاب خود را منتشر کند. ما به شما کمک می‌کنیم تا ایده‌های خود را به واقعیت تبدیل کنید و به دنیای ادبیات قدم بگذارید.";
+              break;
+          case 'about':
+              message = "انتشارات نجوای قلم با هدف ارتقاء فرهنگ کتابخوانی و حمایت از نویسندگان تازه‌کار تأسیس شده است. ما به نویسندگان جوان کمک می‌کنیم تا آثار خود را به بهترین شکل ممکن منتشر کنند. ما به شما این امکان را می‌دهیم که صدای خود را به گوش جهانیان برسانید و با آثار خود تأثیرگذار باشید.";
+              break;
+          case 'contact':
+              message = "برای تماس با ما، می‌توانید از طریق ایمیل یا تلفن اقدام کنید. ما همیشه آماده پاسخگویی به سوالات شما هستیم و خوشحال می‌شویم که به شما کمک کنیم. با ما در ارتباط باشید و از مشاوره‌های ما بهره‌مند شوید. هر سوالی دارید، ما اینجا هستیم تا پاسخگوی شما باشیم.";
+              break;
+          case 'submission':
+              message = "شما می‌توانید آثار خود را از طریق فرم تماس ارسال کنید. ما با دقت اثر شما را بررسی کرده و در صورت نیاز، نکات مفیدی برای بهبود آن ارائه خواهیم داد. با ارسال اثر خود، به جمع نویسندگانی بپیوندید که به موفقیت دست یافته‌اند. ما به شما کمک می‌کنیم تا بهترین نسخه از اثر خود را ارائه دهید.";
+              break;
+          case 'launch':
+              message = "رونمایی از کتاب شما با...";
+              break;
+          default:
+              message = "بخش مورد نظر پیدا نشد.";
+      }
+      alert(message);
+  }
+</script>
+<p>ساخت سایت یاسین مرتضی زاده و امیر علی نجاتی</p>
+</body>
+</html>
